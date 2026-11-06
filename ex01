@@ -1,0 +1,29 @@
+
+**1. Bối cảnh**
+Một tân sinh viên cần tìm tài liệu hướng dẫn học HTML chính thống từ Mozilla nhưng kết quả Google lại trả về quá nhiều bài viết quảng cáo và các diễn đàn không liên quan.
+**2. Hiện trường giả**
+Sinh viên đang dùng từ khóa: **"thầy ơi cho em xin tài liệu học html cơ bản của trang mozilla với ạ".**
+**3. Yêu cầu đầu ra**
+- Chỉ ra tại sao truy vấn trên là "Bad Query" (gây nhiễu).
+- Viết lại truy vấn sử dụng toán tử **site:** để khoanh vùng tên miền uy tín và toán tử **-** để loại bỏ các từ khóa quảng cáo/rác.
+- Giải thích ý nghĩa của việc sử dụng các toán tử này trong việc tiết kiệm thời gian lọc tin.
+
+1.
+-"thầy ơi cho em xin tài liệu học html cơ bản của trang mozilla với ạ"
+Hậu quả của cách báo lỗi này là người hỗ trợ không có bất kỳ thông tin nào về hệ điều hành,
+phần mềm hay mã lỗi thực tế. Cuộc hội thoại phải kéo dài qua nhiều câu hỏi phụ làm mất thời gian của cả hai bên
+2.
+-"site:mozilla.com-<thôn tin không liên quan>"
+3.
+Việc kết hợp linh hoạt nhiều toán tử tạo ra các câu truy vấn mạnh mẽ giúp tiết kiệm tới 80% thời gian tra cứu:
+1. Tải Giáo Trình & Tài Liệu Chuẩn
+filetype:pdf "Nhập môn CNTT"
+Tải trực tiếp tệp giáo trình PDF chính gốc mà không bị lừa bấm vào các nút Download giả mạo trên các trang web quảng cáo.
+
+2. Tra Cứu Bài Sửa Lỗi Diễn Đàn
+site:stackoverflow.com "VS Code" "Permission denied"
+Khoanh vùng diễn đàn hỏi đáp kỹ thuật lớn nhất thế giới để mở thẳng các bài viết có đánh dấu tích xanh xác nhận sửa lỗi.
+
+3. Lọc Sạch Kết Quả Rác & Mã Độc
+cài đặt git windows 11 -quangcao -crack
+Loại trừ toàn bộ các trang chia sẻ phần mềm bẻ khóa độc hại, bảo vệ an toàn cho máy tính cá nhân.
