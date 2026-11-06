@@ -1,0 +1,26 @@
+1. Bối cảnh Một người mới học Git gặp lỗi khi thực hiện lệnh nhưng không hiểu thông báo tiếng Anh, dẫn đến việc lo lắng mình đã làm hỏng hệ thống hoặc không biết phải gõ lệnh gì tiếp theo.
+2. Hiện trường giả Người dùng gửi một câu hỏi mơ hồ: "Anh ơi em gõ lệnh mà nó ra chữ fatal fatal gì đó em không hiểu, giờ làm sao ạ?" (Kèm ảnh chụp màn hình). 
+Hậu quả: Người hỗ trợ không biết lỗi cụ thể là gì, không biết người dùng đang ở thư mục nào, dẫn đến việc hỏi đi hỏi lại nhiều lần gây mất thời gian.
+3. Yêu cầu đầu ra (Kết quả sau khi dùng Prompt đã thiết kế)
+***Báo cáo phân tích (IPO)***
+- Xác định Input (Ngữ cảnh + Mã lỗi nguyên văn), Process (Cách AI xử lý thông tin), Output (Bản dịch và 3 bước sửa lỗi).
+- Viết câu Prompt hoàn chỉnh theo đúng công thức: Ngữ cảnh → Mã lỗi → Yêu cầu.
+
+
+BÁO CÁO PHÂN TÍCH (IPO)
+1. Input (Đầu vào)
+Ngữ cảnh: Người dùng là người mới bắt đầu, không thông thạo tiếng Anh chuyên ngành công nghệ thông tin, đang thao tác với Git.
+Mã lỗi: "fatal: not a git repository (or any of the parent directories): .git"
+2. Process (Quá trình xử lý của AI)
+Bước 1 Giải mã: AI nhận diện mã lỗi thuộc về hệ thống quản lý phiên bản Git.
+Bước 2 Phân tích nguyên nhân: AI xác định lỗi xảy ra vì lệnh Git được chạy trong một thư mục chưa được khởi tạo Git (thiếu thư mục ẩn .git) hoặc người dùng đang đứng sai thư mục dự án.
+Bước 3 Chuyển ngữ: Dịch thông báo kỹ thuật sang tiếng Việt bình dân, dễ hiểu, tránh dùng từ quá hàn lâm.
+Bước 4 Đề xuất giải pháp: Xây dựng quy trình 3 bước: Kiểm tra vị trí > Khởi tạo/Di chuyển > Xác nhận.
+3. Output (Đầu ra)
+Một bản dịch tiếng Việt ngắn gọn, dễ hiểu về mã lỗi.
+Hướng dẫn sửa lỗi chia làm 3 bước rõ ràng, có kèm câu lệnh (command) cụ thể.
+
+câu Prompt hoàn chỉnh theo đúng công thức
+"Tôi là người mới học lập trình và không thành thạo tiếng Anh chuyên ngành.
+Khi tôi gõ lệnh Git, hệ thống báo lỗi: 'fatal: not a git repository (or any of the parent directories): .git'. Bạn hãy giúp tôi:
+<đưa ra từng yêu cầu cụ thể>
