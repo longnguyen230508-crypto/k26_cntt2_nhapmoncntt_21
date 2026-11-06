@@ -1,0 +1,19 @@
+**1. Bối cảnh**
+Một dự án phần mềm bị lỗi xung đột cổng (Port conflict). Một thành viên muốn dùng Google Search để tìm bài viết trên StackOverflow, thành viên khác muốn dán mã lỗi vào AI để hỏi.
+**2. Yêu cầu đầu ra**
+- Lập bảng so sánh Ưu/Nhược điểm của Google Search và AI Assistant dựa trên các tiêu chí: Độ chính xác, Tính cập nhật, Khả năng giải thích và Rủi ro (Hallucination).
+- Đưa ra lựa chọn: Trong trường hợp nào thì bắt buộc phải dùng Google Search để đảm bảo an toàn cho máy tính?
+
+1. So sánh Google Search và AI Assistant
+bảng so sánh :
+https://docs.google.com/document/d/1xdCQLHB5dg-BBIjUL4-eV1YXTnSGvdu-AuC37TfSQPk/edit?usp=sharing
+
+2. Lựa chọn: Khi nào bắt buộc phải dùng Google Search để đảm bảo an toàn?
+-Bạn bắt buộc phải dùng Google Search (và đối chiếu nhiều nguồn uy tín) thay vì tin hoàn toàn vào AI trong trường hợp: 
+Thực hiện các lệnh can thiệp sâu vào hệ thống với quyền quản trị cao (sudo, Administrator) hoặc các lệnh có tính chất hủy diệt (delete, kill, format).
+Ví dụ cụ thể với lỗi xung đột cổng: Để sửa lỗi này, thường phải dùng lệnh kill (Linux/Mac) hoặc taskkill (Windows) để đóng ứng dụng đang chiếm dụng cổng.
+-Nguy cơ từ AI: AI có thể cung cấp một đoạn script tự động tìm và kill mọi tiến trình chạy trên cổng đó. Nếu không may, cổng đó đang được một dịch vụ hệ thống quan trọng (system service) sử dụng, 
+việc kill nhầm có thể gây treo máy hoặc crash hệ điều hành.
+-Sự an toàn từ Google/StackOverflow: Khi đọc các bài viết uy tín, cộng đồng thường cảnh báo: "Hãy kiểm tra PID (Process ID) trước khi kill" và hướng dẫn bạn dùng lệnh lsof hoặc netstat 
+để biết chính xác phần mềm nào đang chạy. Bạn được tiếp cận với những lời cảnh báo từ những người đã từng gặp sai lầm, điều mà AI thường bỏ qua để đưa ra câu trả lời ngắn gọn nhất.
+Kết luận: Hãy dùng AI để hiểu nguyên lý và dùng Google Search để xác thực câu lệnh trước khi nhấn Enter trên terminal.
